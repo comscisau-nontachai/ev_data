@@ -1,6 +1,5 @@
 import 'package:ev_data/constants.dart';
 import 'package:ev_data/models/car.dart';
-import 'package:ev_data/models/product.dart';
 import 'package:flutter/material.dart';
 
 class CarCard extends StatelessWidget {
@@ -79,7 +78,7 @@ class CarCard extends StatelessWidget {
                               topRight:  Radius.circular(22),
                             )
                         ),
-                        child: Text("${car.kilo} km.",style: Theme.of(context).textTheme.button,),
+                        child: Text("${car.range}",style: Theme.of(context).textTheme.button,),
                       )
                     ],
                   ),

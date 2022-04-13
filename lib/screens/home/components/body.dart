@@ -1,12 +1,10 @@
 import 'package:ev_data/constants.dart';
 import 'package:ev_data/models/car.dart';
-import 'package:ev_data/models/product.dart';
 import 'package:ev_data/screens/detail/detail_screen.dart';
 import 'package:ev_data/screens/home/components/car_card.dart';
 import 'package:ev_data/screens/home/components/categories.dart';
 import 'package:ev_data/screens/home/components/search_box.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 class Body extends StatelessWidget {
   const Body({Key? key}) : super(key: key);
@@ -35,16 +33,16 @@ class Body extends StatelessWidget {
             ),
             ListView.builder(
                 scrollDirection: Axis.vertical,
-                itemCount: Car().cars().length,
+                itemCount: cars.length,
                 itemBuilder: (context, index) => CarCard(
                       itemIndex: index,
-                      car: Car().cars()[index],
+                      car: cars[index],
                       press: () {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
                                 builder: (context) => DetailScreen(
-                                      car: Car().cars()[index],
+                                      car: cars[index],
                                     )));
                       },
                     ))

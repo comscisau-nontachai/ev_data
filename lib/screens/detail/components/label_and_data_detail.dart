@@ -1,7 +1,7 @@
 import 'package:ev_data/constants.dart';
 import 'package:flutter/material.dart';
 
-class LabelAndData extends StatelessWidget {
+/*class LabelAndData extends StatelessWidget {
   const LabelAndData({Key? key, required this.title, required this.body}) : super(key: key);
   final String title,body;
 
@@ -17,4 +17,4 @@ class LabelAndData extends StatelessWidget {
       )),
     );
   }
-}
+}*/
