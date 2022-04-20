@@ -11,10 +11,11 @@ class ItemWithImage extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text("Electric Vehicle",style: TextStyle(color: Colors.white),),
+          //Text(car.brand,style: TextStyle(color: Colors.white),),
           Text(car.name,style: Theme.of(context).textTheme.headline4?.copyWith(
             color: Colors.white,fontWeight: FontWeight.bold
           ),),
+          SizedBox(height: kDefaultPadding,),
           Row(
             children: [
               // RichText(text: TextSpan(children: [
@@ -23,7 +24,7 @@ class ItemWithImage extends StatelessWidget {
               //   TextSpan(text: "${car.kilo}",
               //       style: Theme.of(context).textTheme.headline5?.copyWith(color: Colors.white,fontWeight: FontWeight.bold))
               // ])),
-              SizedBox(width: kDefaultPadding/2,),
+              // SizedBox(width: kDefaultPadding/2,),
               Expanded(child: Image.asset(car.image,fit: BoxFit.fill,))
             ],
           )

@@ -10,7 +10,7 @@ class CategoryList extends StatefulWidget {
 
 class _CategoryListState extends State<CategoryList> {
   int selectedIndex = 0;
-  List categories = ['All', 'Bmw', 'Benz', 'Audi', 'Audi', 'Audi'];
+  List categories = ['All', 'Audi','BMW','Ford','Honda','Hyundai','Lexus','Mercedes Benz','MG','Mini','Nissan','Porsche','Tesla','Toyota','Volvo'];
 
   @override
   Widget build(BuildContext context) {
