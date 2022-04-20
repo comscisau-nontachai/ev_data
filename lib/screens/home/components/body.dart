@@ -16,10 +16,10 @@ class Body extends StatelessWidget {
         // SearchBox(
         //   onChanged: (value) {},
         // ),
-        CategoryList(),
-        SizedBox(
-          height: kDefaultPadding / 2,
-        ),
+        //CategoryList(),
+        // SizedBox(
+        //   height: kDefaultPadding / 2,
+        // ),
         Expanded(
             child: Stack(
           children: [
@@ -45,7 +45,7 @@ class Body extends StatelessWidget {
                                       car: cars[index],
                                     )));
                       },
-                    ))
+                    )),
           ],
         ))
       ],

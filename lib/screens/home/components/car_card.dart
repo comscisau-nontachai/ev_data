@@ -38,7 +38,7 @@ class CarCard extends StatelessWidget {
             ),
             Positioned(
                 top: 0,
-                right: 0,
+                right: -10,
                 child: Container(
                   alignment: Alignment.center,
                   padding: EdgeInsets.symmetric(horizontal: kDefaultPadding),

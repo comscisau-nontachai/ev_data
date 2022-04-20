@@ -11,10 +11,11 @@ class ItemWithImage extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text("Electric Vehicle",style: TextStyle(color: Colors.white),),
+          //Text(car.brand,style: TextStyle(color: Colors.white),),
           Text(car.name,style: Theme.of(context).textTheme.headline4?.copyWith(
             color: Colors.white,fontWeight: FontWeight.bold
           ),),
+          SizedBox(height: kDefaultPadding,),
           Row(
             children: [
               // RichText(text: TextSpan(children: [
@@ -23,8 +24,11 @@ class ItemWithImage extends StatelessWidget {
               //   TextSpan(text: "${car.kilo}",
               //       style: Theme.of(context).textTheme.headline5?.copyWith(color: Colors.white,fontWeight: FontWeight.bold))
               // ])),
-              SizedBox(width: kDefaultPadding/2,),
-              Expanded(child: Image.asset(car.image,fit: BoxFit.fill,))
+              // SizedBox(width: kDefaultPadding/2,),
+              Expanded(child:
+                  //Image.network("https://ev-database.org/img/auto/XPENG_P5/XPENG_P5-01.jpg",fit: BoxFit.cover,)
+                FadeInImage.assetNetwork(placeholder: 'assets/images/loading.gif', image: "https://ev-database.org/img/auto/XPENG_P5/XPENG_P5-01.jpg")
+              )
             ],
           )
         ],

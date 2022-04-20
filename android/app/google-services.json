@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "179117703455",
+    "firebase_url": "https://ev-cars-data-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "ev-cars-data",
+    "storage_bucket": "ev-cars-data.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:179117703455:android:3503dd04787f7407ee702a",
+        "android_client_info": {
+          "package_name": "com.accd9.evdata.ev_data"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "179117703455-j8d9lrgfaur1c0jisaq5qt0kbts5mbkt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7ePvOgiIof1noYOnwri8yzOgossZYgvI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "179117703455-j8d9lrgfaur1c0jisaq5qt0kbts5mbkt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
