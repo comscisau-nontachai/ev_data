@@ -8,6 +8,7 @@ class Car {
   final List<CarDetail> dimensionAndWeight;
   final List<CarDetail> miscellaneous;
   final List<String> driveTechnology;
+  final List<String> images;
 
   Car(
       {required this.id,
@@ -22,7 +23,8 @@ class Car {
       required this.energyConsumption,
       required this.dimensionAndWeight,
       required this.miscellaneous,
-      required this.driveTechnology});
+      required this.driveTechnology,
+      required this.images});
 }
 
 class CarDetail {
@@ -80,6 +82,17 @@ var carAudi = [
         CarDetail("Isofix", "2 seats"),
         CarDetail("Platform", "VW J1"),
       ],
+      images: [
+      "https://ev-database.org/img/auto/Audi_e-tron_GT_RS/Audi_e-tron_GT_RS-01.jpg",
+        "https://ev-database.org/img/auto/Audi_e-tron_GT_RS/Audi_e-tron_GT_RS-02.jpg",
+        "https://ev-database.org/img/auto/Audi_e-tron_GT_RS/Audi_e-tron_GT_RS-03.jpg",
+        "https://ev-database.org/img/auto/Audi_e-tron_GT_RS/Audi_e-tron_GT_RS-12.jpg",
+        "https://ev-database.org/img/auto/Audi_e-tron_GT_RS/Audi_e-tron_GT_RS-13.jpg",
+        "https://ev-database.org/img/auto/Audi_e-tron_GT_RS/Audi_e-tron_GT_RS-05.jpg",
+        "https://ev-database.org/img/auto/Audi_e-tron_GT_RS/Audi_e-tron_GT_RS-14.jpg",
+        "https://ev-database.org/img/auto/Audi_e-tron_GT_RS/Audi_e-tron_GT_RS-15.jpg",
+
+      ],
       driveTechnology: []),
   Car(
       id: 1,
@@ -127,6 +140,21 @@ var carAudi = [
         CarDetail("Car Body", "Sedan"),
         CarDetail("Isofix", "2 seats"),
         CarDetail("Platform", "VW J1"),
+      ],
+      images: [
+        "https://ev-database.org/img/auto/Audi_e-tron_GT_quattro/Audi_e-tron_GT_quattro-01.jpg",
+        "https://ev-database.org/img/auto/Audi_e-tron_GT_quattro/Audi_e-tron_GT_quattro-02.jpg",
+        "https://ev-database.org/img/auto/Audi_e-tron_GT_quattro/Audi_e-tron_GT_quattro-03.jpg",
+        "https://ev-database.org/img/auto/Audi_e-tron_GT_quattro/Audi_e-tron_GT_quattro-04.jpg",
+        "https://ev-database.org/img/auto/Audi_e-tron_GT_quattro/Audi_e-tron_GT_quattro-07.jpg",
+        "https://ev-database.org/img/auto/Audi_e-tron_GT_quattro/Audi_e-tron_GT_quattro-09.jpg",
+        "https://ev-database.org/img/auto/Audi_e-tron_GT_quattro/Audi_e-tron_GT_quattro-10.jpg",
+        "https://ev-database.org/img/auto/Audi_e-tron_GT_quattro/Audi_e-tron_GT_quattro-15.jpg",
+        "https://ev-database.org/img/auto/Audi_e-tron_GT_quattro/Audi_e-tron_GT_quattro-16.jpg",
+        "https://ev-database.org/img/auto/Audi_e-tron_GT_quattro/Audi_e-tron_GT_quattro-27.jpg",
+        "https://ev-database.org/img/auto/Audi_e-tron_GT_quattro/Audi_e-tron_GT_quattro-29.jpg",
+        "https://ev-database.org/img/auto/Audi_e-tron_GT_quattro/Audi_e-tron_GT_quattro-28.jpg",
+
       ],
       driveTechnology: []),
   Car(
@@ -177,6 +205,19 @@ var carAudi = [
         CarDetail("Isofix", "3 seats"),
         CarDetail("Platform", "VW MLB"),
       ],
+      images: [
+        "https://ev-database.org/img/auto/Audi_e-tron_S_2020/Audi_e-tron_S_2020-01.jpg",
+        "https://ev-database.org/img/auto/Audi_e-tron_S_2020/Audi_e-tron_S_2020-02.jpg",
+        "https://ev-database.org/img/auto/Audi_e-tron_S_2020/Audi_e-tron_S_2020-03.jpg",
+        "https://ev-database.org/img/auto/Audi_e-tron_S_2020/Audi_e-tron_S_2020-14.jpg",
+        "https://ev-database.org/img/auto/Audi_e-tron_S_2020/Audi_e-tron_S_2020-15.jpg",
+        "https://ev-database.org/img/auto/Audi_e-tron_S_2020/Audi_e-tron_S_2020-17.jpg",
+        "https://ev-database.org/img/auto/Audi_e-tron_S_2020/Audi_e-tron_S_2020-18.jpg",
+        "https://ev-database.org/img/auto/Audi_e-tron_S_2020/Audi_e-tron_S_2020-20.jpg",
+        "https://ev-database.org/img/auto/Audi_e-tron_S_2020/Audi_e-tron_S_2020-21.jpg",
+        "https://ev-database.org/img/auto/Audi_e-tron_S_2020/Audi_e-tron_S_2020-22.jpg",
+
+      ],
       driveTechnology: []),
   Car(
       id: 1,
@@ -225,6 +266,21 @@ var carAudi = [
         CarDetail("Car Body", "SUV"),
         CarDetail("Isofix", "3 seats"),
         CarDetail("Platform", "VW MEB"),
+      ],
+      images: [
+        "https://ev-database.org/img/auto/Audi_Q4_e-tron_2021/Audi_Q4_e-tron_2021-01.jpg",
+        "https://ev-database.org/img/auto/Audi_Q4_e-tron_2021/Audi_Q4_e-tron_2021-02.jpg",
+        "https://ev-database.org/img/auto/Audi_Q4_e-tron_2021/Audi_Q4_e-tron_2021-03.jpg",
+        "https://ev-database.org/img/auto/Audi_Q4_e-tron_2021/Audi_Q4_e-tron_2021-05.jpg",
+        "https://ev-database.org/img/auto/Audi_Q4_e-tron_2021/Audi_Q4_e-tron_2021-08.jpg",
+        "https://ev-database.org/img/auto/Audi_Q4_e-tron_2021/Audi_Q4_e-tron_2021-18.jpg",
+        "https://ev-database.org/img/auto/Audi_Q4_e-tron_2021/Audi_Q4_e-tron_2021-18.jpg",
+        "https://ev-database.org/img/auto/Audi_Q4_e-tron_2021/Audi_Q4_e-tron_2021-21.jpg",
+        "https://ev-database.org/img/auto/Audi_Q4_e-tron_2021/Audi_Q4_e-tron_2021-22.jpg",
+        "https://ev-database.org/img/auto/Audi_Q4_e-tron_2021/Audi_Q4_e-tron_2021-23.jpg",
+        "https://ev-database.org/img/auto/Audi_Q4_e-tron_2021/Audi_Q4_e-tron_2021-26.jpg",
+        "https://ev-database.org/img/auto/Audi_Q4_e-tron_2021/Audi_Q4_e-tron_2021-29.jpg",
+        "https://ev-database.org/img/auto/Audi_Q4_e-tron_2021/Audi_Q4_e-tron_2021-32.jpg",
       ],
       driveTechnology: []),
   Car(
@@ -275,6 +331,21 @@ var carAudi = [
         CarDetail("Isofix", "3 seats"),
         CarDetail("Platform", "VW MEB"),
       ],
+      images: [
+        "https://ev-database.org/img/auto/Audi_Q4_e-tron_2021/Audi_Q4_e-tron_2021-01.jpg",
+        "https://ev-database.org/img/auto/Audi_Q4_e-tron_2021/Audi_Q4_e-tron_2021-02.jpg",
+        "https://ev-database.org/img/auto/Audi_Q4_e-tron_2021/Audi_Q4_e-tron_2021-03.jpg",
+        "https://ev-database.org/img/auto/Audi_Q4_e-tron_2021/Audi_Q4_e-tron_2021-05.jpg",
+        "https://ev-database.org/img/auto/Audi_Q4_e-tron_2021/Audi_Q4_e-tron_2021-08.jpg",
+        "https://ev-database.org/img/auto/Audi_Q4_e-tron_2021/Audi_Q4_e-tron_2021-18.jpg",
+        "https://ev-database.org/img/auto/Audi_Q4_e-tron_2021/Audi_Q4_e-tron_2021-18.jpg",
+        "https://ev-database.org/img/auto/Audi_Q4_e-tron_2021/Audi_Q4_e-tron_2021-21.jpg",
+        "https://ev-database.org/img/auto/Audi_Q4_e-tron_2021/Audi_Q4_e-tron_2021-22.jpg",
+        "https://ev-database.org/img/auto/Audi_Q4_e-tron_2021/Audi_Q4_e-tron_2021-23.jpg",
+        "https://ev-database.org/img/auto/Audi_Q4_e-tron_2021/Audi_Q4_e-tron_2021-26.jpg",
+        "https://ev-database.org/img/auto/Audi_Q4_e-tron_2021/Audi_Q4_e-tron_2021-29.jpg",
+        "https://ev-database.org/img/auto/Audi_Q4_e-tron_2021/Audi_Q4_e-tron_2021-32.jpg",
+      ],
       driveTechnology: []),
   Car(
       id: 1,
@@ -323,6 +394,21 @@ var carAudi = [
         CarDetail("Car Body", "SUV"),
         CarDetail("Isofix", "3 seats"),
         CarDetail("Platform", "VW MEB"),
+      ],
+      images: [
+        "https://ev-database.org/img/auto/Audi_Q4_e-tron_2021/Audi_Q4_e-tron_2021-01.jpg",
+        "https://ev-database.org/img/auto/Audi_Q4_e-tron_2021/Audi_Q4_e-tron_2021-02.jpg",
+        "https://ev-database.org/img/auto/Audi_Q4_e-tron_2021/Audi_Q4_e-tron_2021-03.jpg",
+        "https://ev-database.org/img/auto/Audi_Q4_e-tron_2021/Audi_Q4_e-tron_2021-05.jpg",
+        "https://ev-database.org/img/auto/Audi_Q4_e-tron_2021/Audi_Q4_e-tron_2021-08.jpg",
+        "https://ev-database.org/img/auto/Audi_Q4_e-tron_2021/Audi_Q4_e-tron_2021-18.jpg",
+        "https://ev-database.org/img/auto/Audi_Q4_e-tron_2021/Audi_Q4_e-tron_2021-18.jpg",
+        "https://ev-database.org/img/auto/Audi_Q4_e-tron_2021/Audi_Q4_e-tron_2021-21.jpg",
+        "https://ev-database.org/img/auto/Audi_Q4_e-tron_2021/Audi_Q4_e-tron_2021-22.jpg",
+        "https://ev-database.org/img/auto/Audi_Q4_e-tron_2021/Audi_Q4_e-tron_2021-23.jpg",
+        "https://ev-database.org/img/auto/Audi_Q4_e-tron_2021/Audi_Q4_e-tron_2021-26.jpg",
+        "https://ev-database.org/img/auto/Audi_Q4_e-tron_2021/Audi_Q4_e-tron_2021-29.jpg",
+        "https://ev-database.org/img/auto/Audi_Q4_e-tron_2021/Audi_Q4_e-tron_2021-32.jpg",
       ],
       driveTechnology: []),
   Car(
@@ -373,6 +459,15 @@ var carAudi = [
         CarDetail("Isofix", "3 seats"),
         CarDetail("Platform", "VW MLB"),
       ],
+      images: [
+        "https://ev-database.org/img/auto/Audi_e-tron-50-quattro/Audi_e-tron-50-quattro-01.jpg",
+        "https://ev-database.org/img/auto/Audi_e-tron-50-quattro/Audi_e-tron-50-quattro-02.jpg",
+        "https://ev-database.org/img/auto/Audi_e-tron-50-quattro/Audi_e-tron-50-quattro-04.jpg",
+        "https://ev-database.org/img/auto/Audi_e-tron-50-quattro/Audi_e-tron-50-quattro-05.jpg",
+        "https://ev-database.org/img/auto/Audi_e-tron-50-quattro/Audi_e-tron-50-quattro-06.jpg",
+        "https://ev-database.org/img/auto/Audi_e-tron-50-quattro/Audi_e-tron-50-quattro-07.jpg",
+        "https://ev-database.org/img/auto/Audi_e-tron-50-quattro/Audi_e-tron-50-quattro-08.jpg",
+      ],
       driveTechnology: []),
   Car(
       id: 1,
@@ -422,10 +517,92 @@ var carAudi = [
         CarDetail("Isofix", "3 seats"),
         CarDetail("Platform", "VW MLB"),
       ],
+      images: [
+        "https://ev-database.org/img/auto/Audi_e-tron/Audi_e-tron-01.jpg",
+        "https://ev-database.org/img/auto/Audi_e-tron/Audi_e-tron-02.jpg",
+        "https://ev-database.org/img/auto/Audi_e-tron/Audi_e-tron-03.jpg",
+        "https://ev-database.org/img/auto/Audi_e-tron/Audi_e-tron-07.jpg",
+        "https://ev-database.org/img/auto/Audi_e-tron/Audi_e-tron-09.jpg",
+        "https://ev-database.org/img/auto/Audi_e-tron/Audi_e-tron-10.jpg",
+        "https://ev-database.org/img/auto/Audi_e-tron/Audi_e-tron-11-thumb.jpg",
+        "https://ev-database.org/img/auto/Audi_e-tron/Audi_e-tron-14.jpg",
+        "https://ev-database.org/img/auto/Audi_e-tron/Audi_e-tron-16.jpg",
+        "https://ev-database.org/img/auto/Audi_e-tron/Audi_e-tron-17.jpg",
+        "https://ev-database.org/img/auto/Audi_e-tron/Audi_e-tron-19.jpg",
+        "https://ev-database.org/img/auto/Audi_e-tron/Audi_e-tron-20.jpg",
+        "https://ev-database.org/img/auto/Audi_e-tron/Audi_e-tron-22.jpg",
+      ],
       driveTechnology: []),
 ];
 
 var carBmw = [
+  Car(
+      id: 1,
+      price: "£110,445",
+      name: "BMW i7 xDrive60",
+      brand: "BMW",
+      description: "BMW iX3 desc",
+      image: "assets/images/bmw_i7.png",
+      range: "510 km",
+      performance: [
+        CarDetail("Acceleration 0 - 100 km/h", "4.7 sec"),
+        CarDetail("Top Speed", "240 km/h"),
+        CarDetail("Total Power", "400 kW (544 PS)"),
+        CarDetail("Total Torque", "745 Nm"),
+        CarDetail("Range", "510 km"),
+        CarDetail("Drive Mode", "AWD"),
+      ],
+      batteryAndCharging: [
+        CarDetail("Battery Capacity", "105.0 kWh"),
+        CarDetail("Battery Usable", "101.7 kWh"),
+        CarDetail("Charge Port", "Type2"),
+        CarDetail("FastCharge Port", "CCS"),
+        CarDetail("Port Location", "Right Side - Rear"),
+        CarDetail("Charge Power", "11 kW (AC)"),
+        CarDetail("FastCharge Power", "195 kW (DC)"),
+        CarDetail("Charge Time ", "11 hours"),
+        CarDetail("FastCharge Time", "35 min"),
+        CarDetail("Charge Speed", "47 km/h"),
+        CarDetail("Fastcharge Speed", "610 km/h"),
+      ],
+      energyConsumption: [
+        CarDetail("EVDB Real Range", "510 km (199 Wh/km)"),
+        CarDetail("WLTP Ratings (TEL)", "625 km (163 Wh/km)"),
+        CarDetail("WLTP Ratings (TEH)", "590 km (172 Wh/km)"),
+      ],
+      dimensionAndWeight: [
+        CarDetail("Length", "5391 mm"),
+        CarDetail("Width", "1950 mm"),
+        CarDetail("Height", "1544 mm"),
+        CarDetail("Cargo Volume", "500L"),
+        CarDetail("Tire Spec", ""),
+      ],
+      miscellaneous: [
+        CarDetail("Seats", "5 people"),
+        CarDetail("Car Body", "Sedan"),
+        CarDetail("Isofix", "No Data"),
+        CarDetail("Platform", "BMW CLAR"),
+      ],
+      images: [
+        "https://ev-database.org/img/auto/BMW_i7_2022/BMW_i7_2022-01.jpg",
+        "https://ev-database.org/img/auto/BMW_i7_2022/BMW_i7_2022-03.jpg",
+        "https://ev-database.org/img/auto/BMW_i7_2022/BMW_i7_2022-04.jpg",
+        "https://ev-database.org/img/auto/BMW_i7_2022/BMW_i7_2022-06.jpg",
+        "https://ev-database.org/img/auto/BMW_i7_2022/BMW_i7_2022-07.jpg",
+        "https://ev-database.org/img/auto/BMW_i7_2022/BMW_i7_2022-10.jpg",
+        "https://ev-database.org/img/auto/BMW_i7_2022/BMW_i7_2022-18.jpg",
+        "https://ev-database.org/img/auto/BMW_i7_2022/BMW_i7_2022-19.jpg",
+        "https://ev-database.org/img/auto/BMW_i7_2022/BMW_i7_2022-20.jpg",
+        "https://ev-database.org/img/auto/BMW_i7_2022/BMW_i7_2022-23.jpg",
+        "https://ev-database.org/img/auto/BMW_i7_2022/BMW_i7_2022-24.jpg",
+        "https://ev-database.org/img/auto/BMW_i7_2022/BMW_i7_2022-25.jpg",
+        "https://ev-database.org/img/auto/BMW_i7_2022/BMW_i7_2022-26.jpg",
+        "https://ev-database.org/img/auto/BMW_i7_2022/BMW_i7_2022-28.jpg",
+        "https://ev-database.org/img/auto/BMW_i7_2022/BMW_i7_2022-30.jpg",
+        "https://ev-database.org/img/auto/BMW_i7_2022/BMW_i7_2022-31.jpg",
+        "https://ev-database.org/img/auto/BMW_i7_2022/BMW_i7_2022-32.jpg",
+      ],
+      driveTechnology: []),
   Car(
       id: 1,
       price: "£111,905",
@@ -473,6 +650,25 @@ var carBmw = [
         CarDetail("Car Body", "SUV"),
         CarDetail("Isofix", "No Data"),
         CarDetail("Platform", "BMW CLAR"),
+      ],
+      images: [
+        "https://ev-database.org/img/auto/BMW_iX_2022/BMW_iX_2022-01.jpg",
+        "https://ev-database.org/img/auto/BMW_iX_2022/BMW_iX_2022-03.jpg",
+        "https://ev-database.org/img/auto/BMW_iX_2022/BMW_iX_2022-04.jpg",
+        "https://ev-database.org/img/auto/BMW_iX_2022/BMW_iX_2022-05.jpg",
+        "https://ev-database.org/img/auto/BMW_iX_2022/BMW_iX_2022-06.jpg",
+        "https://ev-database.org/img/auto/BMW_iX_2022/BMW_iX_2022-07.jpg",
+        "https://ev-database.org/img/auto/BMW_iX_2022/BMW_iX_2022-10.jpg",
+        "https://ev-database.org/img/auto/BMW_iX_2022/BMW_iX_2022-11.jpg",
+        "https://ev-database.org/img/auto/BMW_iX_2022/BMW_iX_2022-12.jpg",
+        "https://ev-database.org/img/auto/BMW_iX_2022/BMW_iX_2022-26.jpg",
+        "https://ev-database.org/img/auto/BMW_iX_2022/BMW_iX_2022-28.jpg",
+        "https://ev-database.org/img/auto/BMW_iX_2022/BMW_iX_2022-29.jpg",
+        "https://ev-database.org/img/auto/BMW_iX_2022/BMW_iX_2022-31.jpg",
+        "https://ev-database.org/img/auto/BMW_iX_2022/BMW_iX_2022-34.jpg",
+        "https://ev-database.org/img/auto/BMW_iX_2022/BMW_iX_2022-35.jpg",
+        "https://ev-database.org/img/auto/BMW_iX_2022/BMW_iX_2022-39.jpg",
+        "https://ev-database.org/img/auto/BMW_iX_2022/BMW_iX_2022-38.jpg",
       ],
       driveTechnology: []),
   Car(
@@ -523,6 +719,22 @@ var carBmw = [
         CarDetail("Isofix", "2 seats"),
         CarDetail("Platform", "BMW CLAR"),
       ],
+      images: [
+        "https://ev-database.org/img/auto/BMW_iX3_2022/BMW_iX3_2022-02.jpg",
+        "https://ev-database.org/img/auto/BMW_iX3_2022/BMW_iX3_2022-03.jpg",
+        "https://ev-database.org/img/auto/BMW_iX3_2022/BMW_iX3_2022-04.jpg",
+        "https://ev-database.org/img/auto/BMW_iX3_2022/BMW_iX3_2022-06.jpg",
+        "https://ev-database.org/img/auto/BMW_iX3_2022/BMW_iX3_2022-11.jpg",
+        "https://ev-database.org/img/auto/BMW_iX3_2022/BMW_iX3_2022-17.jpg",
+        "https://ev-database.org/img/auto/BMW_iX3_2022/BMW_iX3_2022-19.jpg",
+        "https://ev-database.org/img/auto/BMW_iX3_2022/BMW_iX3_2022-20.jpg",
+        "https://ev-database.org/img/auto/BMW_iX3_2022/BMW_iX3_2022-21.jpg",
+        "https://ev-database.org/img/auto/BMW_iX3_2022/BMW_iX3_2022-22.jpg",
+        "https://ev-database.org/img/auto/BMW_iX3_2022/BMW_iX3_2022-23.jpg",
+        "https://ev-database.org/img/auto/BMW_iX3_2022/BMW_iX3_2022-26.jpg",
+        "https://ev-database.org/img/auto/BMW_iX3_2022/BMW_iX3_2022-27.jpg",
+        "https://ev-database.org/img/auto/BMW_iX3_2022/BMW_iX3_2022-28.jpg",
+      ],
       driveTechnology: []),
   Car(
       id: 1,
@@ -570,7 +782,15 @@ var carBmw = [
         CarDetail("Car Body", "Sedan"),
         CarDetail("Isofix", "No Data"),
         CarDetail("Platform", "BMW CLAR"),
-      ],
+      ],images: [
+    "https://ev-database.org/img/auto/BMW_i4_M50/BMW_i4_M50-01.jpg",
+    "https://ev-database.org/img/auto/BMW_i4_M50/BMW_i4_M50-02.jpg",
+    "https://ev-database.org/img/auto/BMW_i4_M50/BMW_i4_M50-03.jpg",
+    "https://ev-database.org/img/auto/BMW_i4_M50/BMW_i4_M50-06.jpg",
+    "https://ev-database.org/img/auto/BMW_i4_M50/BMW_i4_M50-09.jpg",
+    "https://ev-database.org/img/auto/BMW_i4_M50/BMW_i4_M50-11.jpg",
+    "https://ev-database.org/img/auto/BMW_i4_M50/BMW_i4_M50-12.jpg",
+  ],
       driveTechnology: []),
   Car(
       id: 1,
@@ -619,7 +839,25 @@ var carBmw = [
         CarDetail("Car Body", "SUV"),
         CarDetail("Isofix", "No Data"),
         CarDetail("Platform", "BMW CLAR"),
-      ],
+      ],images: [
+    "https://ev-database.org/img/auto/BMW_iX_2022/BMW_iX_2022-01.jpg",
+    "https://ev-database.org/img/auto/BMW_iX_2022/BMW_iX_2022-03.jpg",
+    "https://ev-database.org/img/auto/BMW_iX_2022/BMW_iX_2022-04.jpg",
+    "https://ev-database.org/img/auto/BMW_iX_2022/BMW_iX_2022-05.jpg",
+    "https://ev-database.org/img/auto/BMW_iX_2022/BMW_iX_2022-06.jpg",
+    "https://ev-database.org/img/auto/BMW_iX_2022/BMW_iX_2022-07.jpg",
+    "https://ev-database.org/img/auto/BMW_iX_2022/BMW_iX_2022-10.jpg",
+    "https://ev-database.org/img/auto/BMW_iX_2022/BMW_iX_2022-11.jpg",
+    "https://ev-database.org/img/auto/BMW_iX_2022/BMW_iX_2022-12.jpg",
+    "https://ev-database.org/img/auto/BMW_iX_2022/BMW_iX_2022-26.jpg",
+    "https://ev-database.org/img/auto/BMW_iX_2022/BMW_iX_2022-28.jpg",
+    "https://ev-database.org/img/auto/BMW_iX_2022/BMW_iX_2022-29.jpg",
+    "https://ev-database.org/img/auto/BMW_iX_2022/BMW_iX_2022-31.jpg",
+    "https://ev-database.org/img/auto/BMW_iX_2022/BMW_iX_2022-34.jpg",
+    "https://ev-database.org/img/auto/BMW_iX_2022/BMW_iX_2022-35.jpg",
+    "https://ev-database.org/img/auto/BMW_iX_2022/BMW_iX_2022-39.jpg",
+    "https://ev-database.org/img/auto/BMW_iX_2022/BMW_iX_2022-38.jpg",
+  ],
       driveTechnology: []),
   Car(
       id: 1,
@@ -668,7 +906,25 @@ var carBmw = [
         CarDetail("Car Body", "SUV"),
         CarDetail("Isofix", "No Data"),
         CarDetail("Platform", "BMW CLAR"),
-      ],
+      ],images: [
+    "https://ev-database.org/img/auto/BMW_iX_2022/BMW_iX_2022-01.jpg",
+    "https://ev-database.org/img/auto/BMW_iX_2022/BMW_iX_2022-03.jpg",
+    "https://ev-database.org/img/auto/BMW_iX_2022/BMW_iX_2022-04.jpg",
+    "https://ev-database.org/img/auto/BMW_iX_2022/BMW_iX_2022-05.jpg",
+    "https://ev-database.org/img/auto/BMW_iX_2022/BMW_iX_2022-06.jpg",
+    "https://ev-database.org/img/auto/BMW_iX_2022/BMW_iX_2022-07.jpg",
+    "https://ev-database.org/img/auto/BMW_iX_2022/BMW_iX_2022-10.jpg",
+    "https://ev-database.org/img/auto/BMW_iX_2022/BMW_iX_2022-11.jpg",
+    "https://ev-database.org/img/auto/BMW_iX_2022/BMW_iX_2022-12.jpg",
+    "https://ev-database.org/img/auto/BMW_iX_2022/BMW_iX_2022-26.jpg",
+    "https://ev-database.org/img/auto/BMW_iX_2022/BMW_iX_2022-28.jpg",
+    "https://ev-database.org/img/auto/BMW_iX_2022/BMW_iX_2022-29.jpg",
+    "https://ev-database.org/img/auto/BMW_iX_2022/BMW_iX_2022-31.jpg",
+    "https://ev-database.org/img/auto/BMW_iX_2022/BMW_iX_2022-34.jpg",
+    "https://ev-database.org/img/auto/BMW_iX_2022/BMW_iX_2022-35.jpg",
+    "https://ev-database.org/img/auto/BMW_iX_2022/BMW_iX_2022-39.jpg",
+    "https://ev-database.org/img/auto/BMW_iX_2022/BMW_iX_2022-38.jpg",
+  ],
       driveTechnology: []),
   Car(
       id: 1,
@@ -716,7 +972,18 @@ var carBmw = [
         CarDetail("Car Body", "Sedan"),
         CarDetail("Isofix", "No Data"),
         CarDetail("Platform", "BMW CLAR"),
-      ],
+      ],images: [
+        "https://ev-database.org/img/auto/BMW_i4_eDrive40/BMW_i4_eDrive40-01.jpg",
+        "https://ev-database.org/img/auto/BMW_i4_eDrive40/BMW_i4_eDrive40-02.jpg",
+        "https://ev-database.org/img/auto/BMW_i4_eDrive40/BMW_i4_eDrive40-04.jpg",
+        "https://ev-database.org/img/auto/BMW_i4_eDrive40/BMW_i4_eDrive40-03.jpg",
+        "https://ev-database.org/img/auto/BMW_i4_eDrive40/BMW_i4_eDrive40-08.jpg",
+        "https://ev-database.org/img/auto/BMW_i4_eDrive40/BMW_i4_eDrive40-12.jpg",
+        "https://ev-database.org/img/auto/BMW_i4_eDrive40/BMW_i4_eDrive40-17.jpg",
+        "https://ev-database.org/img/auto/BMW_i4_eDrive40/BMW_i4_eDrive40-18.jpg",
+        "https://ev-database.org/img/auto/BMW_i4_eDrive40/BMW_i4_eDrive40-19.jpg",
+        "https://ev-database.org/img/auto/BMW_i4_eDrive40/BMW_i4_eDrive40-20.jpg",
+  ],
       driveTechnology: []),
   Car(
       id: 1,
@@ -765,7 +1032,23 @@ var carBmw = [
         CarDetail("Car Body", "Hatchback"),
         CarDetail("Isofix", "2 Seats"),
         CarDetail("Platform", "No Data"),
-      ],
+      ],images: [
+        "https://ev-database.org/img/auto/BMW_i3_2019/BMW_i3_2019-01.jpg",
+        "https://ev-database.org/img/auto/BMW_i3_2019/BMW_i3_2019-13.jpg",
+        "https://ev-database.org/img/auto/BMW_i3_2019/BMW_i3_2019-05.jpg",
+        "https://ev-database.org/img/auto/BMW_i3_2019/BMW_i3_2019-07.jpg",
+        "https://ev-database.org/img/auto/BMW_i3_2019/BMW_i3_2019-12.jpg",
+        "https://ev-database.org/img/auto/BMW_i3_2019/BMW_i3_2019-15.jpg",
+        "https://ev-database.org/img/auto/BMW_i3_2019/BMW_i3_2019-18.jpg",
+        "https://ev-database.org/img/auto/BMW_i3_2019/BMW_i3_2019-19.jpg",
+        "https://ev-database.org/img/auto/BMW_i3_2019/BMW_i3_2019-20.jpg",
+        "https://ev-database.org/img/auto/BMW_i3_2019/BMW_i3_2019-21.jpg",
+        "https://ev-database.org/img/auto/BMW_i3_2019/BMW_i3_2019-22.jpg",
+        "https://ev-database.org/img/auto/BMW_i3_2019/BMW_i3_2019-24.jpg",
+        "https://ev-database.org/img/auto/BMW_i3_2019/BMW_i3_2019-25.jpg",
+        "https://ev-database.org/img/auto/BMW_i3_2019/BMW_i3_2019-27.jpg",
+
+  ],
       driveTechnology: []),
 ];
 
@@ -816,7 +1099,7 @@ var carFord = [
         CarDetail("Car Body", "SUV"),
         CarDetail("Isofix", "2 Seats"),
         CarDetail("Platform", "No Data"),
-      ],
+      ],images: [],
       driveTechnology: []),
 ];
 var carHonda = [
@@ -865,7 +1148,7 @@ var carHonda = [
         CarDetail("Car Body", "Hatchback"),
         CarDetail("Isofix", "2 Seats"),
         CarDetail("Platform", "No Data"),
-      ],
+      ],images: [],
       driveTechnology: []),
 ];
 var carHyundai = [
@@ -913,7 +1196,7 @@ var carHyundai = [
         CarDetail("Car Body", "SUV"),
         CarDetail("Isofix", "2 Seats"),
         CarDetail("Platform", "HMG E-GMP"),
-      ],
+      ],images: [],
       driveTechnology: []),
   Car(
       id: 1,
@@ -960,7 +1243,7 @@ var carHyundai = [
         CarDetail("Car Body", "SUV"),
         CarDetail("Isofix", "No Data"),
         CarDetail("Platform", "HMG E-GMP"),
-      ],
+      ],images: [],
       driveTechnology: []),
   Car(
       id: 1,
@@ -1008,7 +1291,7 @@ var carHyundai = [
         CarDetail("Car Body", "SUV"),
         CarDetail("Isofix", "No Data"),
         CarDetail("Platform", "HMG E-GMP"),
-      ],
+      ],images: [],
       driveTechnology: []),
   Car(
       id: 1,
@@ -1056,7 +1339,7 @@ var carHyundai = [
         CarDetail("Car Body", "SUV"),
         CarDetail("Isofix", "No Data"),
         CarDetail("Platform", "HMG E-GMP"),
-      ],
+      ],images: [],
       driveTechnology: []),
 ];
 var carLexus = [
@@ -1107,7 +1390,7 @@ var carLexus = [
         CarDetail("Car Body", "SUV"),
         CarDetail("Isofix", "2 Seats"),
         CarDetail("Platform", "Toyota GA-C"),
-      ],
+      ],images: [],
       driveTechnology: []),
 ];
 var carMazda = [
@@ -1157,7 +1440,7 @@ var carMazda = [
         CarDetail("Car Body", "SUV"),
         CarDetail("Isofix", "2 Seats"),
         CarDetail("Platform", "No Data"),
-      ],
+      ],images: [],
       driveTechnology: []),
 ];
 var carBenz = [
@@ -1207,7 +1490,7 @@ var carBenz = [
         CarDetail("Car Body", "Sedan"),
         CarDetail("Isofix", "No Data"),
         CarDetail("Platform", "No Data"),
-      ],
+      ],images: [],
       driveTechnology: []),
   Car(
       id: 1,
@@ -1254,7 +1537,7 @@ var carBenz = [
         CarDetail("Car Body", "SUV"),
         CarDetail("Isofix", "2 Seats"),
         CarDetail("Platform", "DAIMLER MFA2"),
-      ],
+      ],images: [],
       driveTechnology: []),
   Car(
       id: 1,
@@ -1302,7 +1585,7 @@ var carBenz = [
         CarDetail("Car Body", "Sedan"),
         CarDetail("Isofix", "No Data"),
         CarDetail("Platform", "No Data"),
-      ],
+      ],images: [],
       driveTechnology: []),
   Car(
       id: 1,
@@ -1350,7 +1633,7 @@ var carBenz = [
         CarDetail("Car Body", "SUV"),
         CarDetail("Isofix", "4 Seats"),
         CarDetail("Platform", "DAIMLER MFA2"),
-      ],
+      ],images: [],
       driveTechnology: []),
   Car(
       id: 1,
@@ -1398,7 +1681,7 @@ var carBenz = [
         CarDetail("Car Body", "Sedan"),
         CarDetail("Isofix", "No Data"),
         CarDetail("Platform", "DAIMLER EVA2"),
-      ],
+      ],images: [],
       driveTechnology: []),
   Car(
       id: 1,
@@ -1446,7 +1729,7 @@ var carBenz = [
         CarDetail("Car Body", "Sedan"),
         CarDetail("Isofix", "No Data"),
         CarDetail("Platform", "DAIMLER EVA2"),
-      ],
+      ],images: [],
       driveTechnology: []),
   Car(
       id: 1,
@@ -1494,7 +1777,7 @@ var carBenz = [
         CarDetail("Car Body", "Sedan"),
         CarDetail("Isofix", "No Data"),
         CarDetail("Platform", "DAIMLER EVA2"),
-      ],
+      ],images: [],
       driveTechnology: []),
 ];
 var carMG = [
@@ -1543,7 +1826,7 @@ var carMG = [
         CarDetail("Car Body", "SUV"),
         CarDetail("Isofix", "2 Seats"),
         CarDetail("Platform", "No Data"),
-      ],
+      ],images: [],
       driveTechnology: []),
 ];
 var carMini = [
@@ -1593,7 +1876,7 @@ var carMini = [
         CarDetail("Car Body", "Hatchback"),
         CarDetail("Isofix", "No Data"),
         CarDetail("Platform", "No Data"),
-      ],
+      ],images: [],
       driveTechnology: []),
 ];
 var carNissan = [
@@ -1641,7 +1924,7 @@ var carNissan = [
         CarDetail("Car Body", "SUV"),
         CarDetail("Isofix", "No Data"),
         CarDetail("Platform", "RNM CMF-EV"),
-      ],
+      ],images: [],
       driveTechnology: []),
   Car(
       id: 1,
@@ -1687,7 +1970,7 @@ var carNissan = [
         CarDetail("Car Body", "Hatchback"),
         CarDetail("Isofix", "2 Seats"),
         CarDetail("Platform", "No Data"),
-      ],
+      ],images: [],
       driveTechnology: []),
 ];
 var carPorsche = [
@@ -1737,7 +2020,7 @@ var carPorsche = [
         CarDetail("Car Body", "Station/Estate"),
         CarDetail("Isofix", "2 Seats"),
         CarDetail("Platform", "VW J1"),
-      ],
+      ],images: [],
       driveTechnology: []),
   Car(
       id: 1,
@@ -1785,7 +2068,7 @@ var carPorsche = [
         CarDetail("Car Body", "Sedan"),
         CarDetail("Isofix", "2 Seats"),
         CarDetail("Platform", "VW J1"),
-      ],
+      ],images: [],
       driveTechnology: []),
   Car(
       id: 1,
@@ -1833,7 +2116,7 @@ var carPorsche = [
         CarDetail("Car Body", "Station/Estate"),
         CarDetail("Isofix", "2 Seats"),
         CarDetail("Platform", "VW J1"),
-      ],
+      ],images: [],
       driveTechnology: []),
 ];
 var carTesla = [
@@ -1882,7 +2165,7 @@ var carTesla = [
         CarDetail("Car Body", "Liftback Sedan"),
         CarDetail("Isofix", "No Data"),
         CarDetail("Platform", "TESLA S/X"),
-      ],
+      ],images: [],
       driveTechnology: []),
   Car(
       id: 1,
@@ -1929,7 +2212,7 @@ var carTesla = [
         CarDetail("Car Body", "Liftback Sedan"),
         CarDetail("Isofix", "No Data"),
         CarDetail("Platform", "TESLA S/X"),
-      ],
+      ],images: [],
       driveTechnology: []),
   Car(
       id: 1,
@@ -1977,7 +2260,7 @@ var carTesla = [
         CarDetail("Car Body", "SUV"),
         CarDetail("Isofix", "No Data"),
         CarDetail("Platform", "TESLA S/X"),
-      ],
+      ],images: [],
       driveTechnology: []),
   Car(
       id: 1,
@@ -2024,7 +2307,7 @@ var carTesla = [
         CarDetail("Car Body", "SUV"),
         CarDetail("Isofix", "No Data"),
         CarDetail("Platform", "TESLA S/X"),
-      ],
+      ],images: [],
       driveTechnology: []),
   Car(
       id: 1,
@@ -2072,7 +2355,7 @@ var carTesla = [
         CarDetail("Car Body", "SUV"),
         CarDetail("Isofix", "2 Seats"),
         CarDetail("Platform", "TESLA 3/Y"),
-      ],
+      ],images: [],
       driveTechnology: []),
   Car(
       id: 1,
@@ -2119,7 +2402,7 @@ var carTesla = [
         CarDetail("Car Body", "SUV"),
         CarDetail("Isofix", "2 Seats"),
         CarDetail("Platform", "TESLA 3/Y"),
-      ],
+      ],images: [],
       driveTechnology: []),
   Car(
       id: 1,
@@ -2167,7 +2450,7 @@ var carTesla = [
         CarDetail("Car Body", "Sedan"),
         CarDetail("Isofix", "2 Seats"),
         CarDetail("Platform", "TESLA 3/Y"),
-      ],
+      ],images: [],
       driveTechnology: []),
   Car(
       id: 1,
@@ -2214,7 +2497,7 @@ var carTesla = [
         CarDetail("Car Body", "Sedan"),
         CarDetail("Isofix", "2 Seats"),
         CarDetail("Platform", "TESLA 3/Y"),
-      ],
+      ],images: [],
       driveTechnology: []),
 ];
 var carToyota = [
@@ -2264,7 +2547,7 @@ var carToyota = [
         CarDetail("Car Body", "SUV"),
         CarDetail("Isofix", "2 Seats"),
         CarDetail("Platform", "TMC E-TNGA"),
-      ],
+      ],images: [],
       driveTechnology: []),
 ];
 var carVolvo = [
@@ -2314,7 +2597,7 @@ var carVolvo = [
         CarDetail("Car Body", "SUV"),
         CarDetail("Isofix", "2 Seats"),
         CarDetail("Platform", "Volvo CMA"),
-      ],
+      ],images: [],
       driveTechnology: []),
   Car(
       id: 1,
@@ -2362,7 +2645,7 @@ var carVolvo = [
         CarDetail("Car Body", "SUV"),
         CarDetail("Isofix", "2 Seats"),
         CarDetail("Platform", "Volvo CMA"),
-      ],
+      ],images: [],
       driveTechnology: []),
   Car(
       id: 1,
@@ -2410,7 +2693,7 @@ var carVolvo = [
         CarDetail("Car Body", "SUV"),
         CarDetail("Isofix", "2 Seats"),
         CarDetail("Platform", "Volvo CMA"),
-      ],
+      ],images: [],
       driveTechnology: []),
   Car(
       id: 1,
@@ -2458,7 +2741,7 @@ var carVolvo = [
         CarDetail("Car Body", "SUV"),
         CarDetail("Isofix", "2 Seats"),
         CarDetail("Platform", "Volvo CMA"),
-      ],
+      ],images: [],
       driveTechnology: []),
 ];
 var carXPENG = [
@@ -2508,7 +2791,7 @@ var carXPENG = [
         CarDetail("Car Body", "Sedan"),
         CarDetail("Isofix", "2 Seats"),
         CarDetail("Platform", "No Data"),
-      ],
+      ],images: [],
       driveTechnology: []),
 ];
 

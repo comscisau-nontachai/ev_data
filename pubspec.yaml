@@ -35,6 +35,7 @@ dependencies:
 
   firebase_core: ^1.14.1
   firebase_database: ^9.0.11
+  carousel_slider: ^4.0.0
 
 
 dev_dependencies:

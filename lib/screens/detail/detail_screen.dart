@@ -11,15 +11,14 @@ class DetailScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: kPrimaryColor,
-      appBar: buildAppbar(context),
+      // appBar: buildAppbar(context),
       body: Body(car: car,),
     );
   }
 
   AppBar buildAppbar(BuildContext context) {
     return AppBar(
-      backgroundColor: kPrimaryColor,
+      backgroundColor: Colors.transparent,
       elevation: 0,
       leading: IconButton(
         icon: SvgPicture.asset("assets/icons/back.svg",color: Colors.white,),
