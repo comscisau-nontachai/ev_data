@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.accd9.evdata.ev_data">
+    package="com.accd9.evdata">
    <application
         android:label="Ev Car"
         android:icon="@mipmap/ic_launcher">
