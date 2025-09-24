@@ -1,4 +1,3 @@
-import 'package:ev_data/constants.dart';
 import 'package:ev_data/models/car.dart';
 import 'package:ev_data/screens/detail/components/body.dart';
 import 'package:flutter/material.dart';
@@ -12,7 +11,9 @@ class DetailScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       // appBar: buildAppbar(context),
-      body: Body(car: car,),
+      body: Body(
+        car: car,
+      ),
     );
   }
 
@@ -21,7 +22,10 @@ class DetailScreen extends StatelessWidget {
       backgroundColor: Colors.transparent,
       elevation: 0,
       leading: IconButton(
-        icon: SvgPicture.asset("assets/icons/back.svg",color: Colors.white,),
+        icon: SvgPicture.asset(
+          "assets/icons/back.svg",
+          color: Colors.white,
+        ),
         onPressed: () => Navigator.pop(context),
       ),
     );

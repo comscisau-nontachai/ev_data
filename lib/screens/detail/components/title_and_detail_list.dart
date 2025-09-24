@@ -21,9 +21,9 @@ class TitleAndDetailList extends StatelessWidget {
         Text(title,
             style: Theme.of(context)
                 .textTheme
-                .headline6
+                .headlineMedium
                 ?.copyWith(fontWeight: FontWeight.bold)),
-        SizedBox(
+        const SizedBox(
           height: kDefaultPadding / 2,
         ),
         Wrap(
@@ -32,8 +32,8 @@ class TitleAndDetailList extends StatelessWidget {
               .map((i) => LabelAndData(title: i.title, body: i.body))
               .toList(),
         ),
-        SizedBox(
-          height: kDefaultPadding * 1.5 ,
+        const SizedBox(
+          height: kDefaultPadding * 1.5,
         ),
       ],
     );

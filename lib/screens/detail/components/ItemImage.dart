@@ -16,22 +16,22 @@ class ItemImage extends StatelessWidget {
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
 
-    return Container(
+    return SizedBox(
       height: size.height * 0.40,
       child: Stack(
         children: [
-          Container(
+          SizedBox(
               height: size.height * 0.38,
               child: CarouselSlider.builder(
                 itemCount: car.images.length,
-                itemBuilder: (BuildContext context, int itemIndex, int pageViewIndex) => Container(
-                  child:
-                  FadeInImage.assetNetwork(
+                itemBuilder:
+                    (BuildContext context, int itemIndex, int pageViewIndex) =>
+                        Container(
+                  child: FadeInImage.assetNetwork(
                     placeholder: 'assets/images/loading.gif',
                     image: car.images[itemIndex],
                     fit: BoxFit.cover,
                   ),
-
                 ),
                 options: CarouselOptions(
                   height: size.height,
@@ -44,13 +44,12 @@ class ItemImage extends StatelessWidget {
             top: size.height * 0.35 - 35,
             right: 0,
             child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: kDefaultPadding / 2),
+              padding:
+                  const EdgeInsets.symmetric(horizontal: kDefaultPadding / 2),
               child: Text(
                 car.name,
-                style: Theme.of(context)
-                    .textTheme
-                    .headline5
-                    ?.copyWith(color: Colors.white, fontWeight: FontWeight.bold),
+                style: Theme.of(context).textTheme.headlineMedium?.copyWith(
+                    color: Colors.white, fontWeight: FontWeight.bold),
               ),
             ),
           ),

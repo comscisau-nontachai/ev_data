@@ -19,15 +19,15 @@ class LabelAndData extends StatelessWidget {
           children: [
             Text(
               title,
-              style: TextStyle(color: kTextLightColor),
+              style: const TextStyle(color: kTextLightColor),
             ),
             Text(
               body,
-              style: TextStyle(color: kTextLightColor),
+              style: const TextStyle(color: kTextLightColor),
             ),
           ],
         ),
-        SizedBox(
+        const SizedBox(
           height: kDefaultPadding / 4,
         )
       ],

@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
+  //await Firebase.initializeApp();
   runApp(const MyApp());
 }
 
@@ -16,12 +16,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Ev Data',
-      theme: ThemeData(
-          primaryColor: kPrimaryColor,
-          visualDensity: VisualDensity.adaptivePlatformDensity
-      ),
+      theme: ThemeData(primaryColor: kPrimaryColor, visualDensity: VisualDensity.adaptivePlatformDensity),
       home: HomeScreen(),
     );
   }
 }
-

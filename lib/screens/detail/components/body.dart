@@ -17,46 +17,47 @@ class Body extends StatelessWidget {
     final size = MediaQuery.of(context).size;
     return Stack(
       children: [
-        ItemImage(car: car,),
+        ItemImage(
+          car: car,
+        ),
         Expanded(
             child: Container(
           margin: EdgeInsets.only(top: size.height * 0.35),
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
               color: Colors.white,
-              borderRadius:
-                  BorderRadius.only(topRight: Radius.circular(30), topLeft: Radius.circular(30))),
-              child: SingleChildScrollView(
-                child: Padding(
-                  padding: const EdgeInsets.all(kDefaultPadding),
-                  child: Column(
-                    children: [
-                      TitleAndDetailList(
-                        title: "Performance",
-                        detailList: car.performance,
-                      ),
-                      TitleAndDetailList(
-                        title: "Battery and Charging",
-                        detailList: car.batteryAndCharging,
-                      ),
-                      TitleAndDetailList(
-                        title: "Energy Consumption",
-                        detailList: car.energyConsumption,
-                      ),
-                      TitleAndDetailList(
-                        title: "Dimensions and Weight",
-                        detailList: car.dimensionAndWeight,
-                      ),
-                      TitleAndDetailList(
-                        title: "Miscellaneous",
-                        detailList: car.miscellaneous,
-                      ),
-                    ],
+              borderRadius: BorderRadius.only(
+                  topRight: Radius.circular(30), topLeft: Radius.circular(30))),
+          child: SingleChildScrollView(
+            child: Padding(
+              padding: const EdgeInsets.all(kDefaultPadding),
+              child: Column(
+                children: [
+                  TitleAndDetailList(
+                    title: "Performance",
+                    detailList: car.performance,
                   ),
-                ),
+                  TitleAndDetailList(
+                    title: "Battery and Charging",
+                    detailList: car.batteryAndCharging,
+                  ),
+                  TitleAndDetailList(
+                    title: "Energy Consumption",
+                    detailList: car.energyConsumption,
+                  ),
+                  TitleAndDetailList(
+                    title: "Dimensions and Weight",
+                    detailList: car.dimensionAndWeight,
+                  ),
+                  TitleAndDetailList(
+                    title: "Miscellaneous",
+                    detailList: car.miscellaneous,
+                  ),
+                ],
               ),
+            ),
+          ),
         )),
       ],
     );
   }
 }
-
