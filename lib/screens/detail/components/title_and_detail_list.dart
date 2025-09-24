@@ -5,10 +5,10 @@ import 'package:flutter/material.dart';
 
 class TitleAndDetailList extends StatelessWidget {
   const TitleAndDetailList({
-    Key? key,
+    super.key,
     required this.title,
     required this.detailList,
-  }) : super(key: key);
+  });
 
   final String title;
   final List<CarDetail> detailList;
@@ -18,19 +18,13 @@ class TitleAndDetailList extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(title,
-            style: Theme.of(context)
-                .textTheme
-                .headlineMedium
-                ?.copyWith(fontWeight: FontWeight.bold)),
+        Text(title, style: Theme.of(context).textTheme.headlineMedium?.copyWith(fontWeight: FontWeight.bold)),
         const SizedBox(
           height: kDefaultPadding / 2,
         ),
         Wrap(
           direction: Axis.horizontal,
-          children: detailList
-              .map((i) => LabelAndData(title: i.title, body: i.body))
-              .toList(),
+          children: detailList.map((i) => LabelAndData(title: i.title, body: i.body)).toList(),
         ),
         const SizedBox(
           height: kDefaultPadding * 1.5,

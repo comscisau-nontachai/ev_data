@@ -4,11 +4,11 @@ import 'package:flutter/material.dart';
 
 class CarCard extends StatefulWidget {
   const CarCard({
-    Key? key,
+    super.key,
     required this.itemIndex,
     required this.car,
     this.press,
-  }) : super(key: key);
+  });
 
   final int itemIndex;
   final Car car;
@@ -21,38 +21,38 @@ class CarCard extends StatefulWidget {
 class _CarCardState extends State<CarCard> with SingleTickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
-    double _scale = 1.0;
+    double scale = 1.0;
 
-    void _onTapDown(TapDownDetails details) {
+    void onTapDown(TapDownDetails details) {
       setState(() {
-        _scale = 0.9;
+        scale = 0.9;
       });
     }
 
-    void _onTapUp(TapUpDetails details) {
+    void onTapUp(TapUpDetails details) {
       setState(() {
-        _scale = 1.0;
+        scale = 1.0;
       });
       if (widget.press != null) widget.press!();
     }
 
-    void _onTapCancel() {
+    void onTapCancel() {
       setState(() {
-        _scale = 1.0;
+        scale = 1.0;
       });
     }
 
     var size = MediaQuery.of(context).size;
     return AnimatedScale(
-      scale: _scale,
+      scale: scale,
       duration: const Duration(milliseconds: 150),
       child: Container(
         height: 160,
         margin: const EdgeInsets.symmetric(vertical: kDefaultPadding / 8, horizontal: kDefaultPadding),
         child: GestureDetector(
-          onTapDown: _onTapDown,
-          onTapUp: _onTapUp,
-          onTapCancel: _onTapCancel,
+          onTapDown: onTapDown,
+          onTapUp: onTapUp,
+          onTapCancel: onTapCancel,
           child: Stack(
             alignment: Alignment.bottomCenter,
             children: [

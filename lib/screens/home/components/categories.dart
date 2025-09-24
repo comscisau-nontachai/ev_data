@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 
 class CategoryList extends StatefulWidget {
   final ValueChanged<String>? onCategorySelected; // Add this line
-  const CategoryList({Key? key, this.onCategorySelected}) : super(key: key);
+  const CategoryList({super.key, this.onCategorySelected});
 
   @override
   State<CategoryList> createState() => _CategoryListState();
@@ -40,23 +40,14 @@ class _CategoryListState extends State<CategoryList> {
                   });
 
                   if (widget.onCategorySelected != null) {
-                    widget.onCategorySelected!(
-                        selectedCategory); // Call the callback
+                    widget.onCategorySelected!(selectedCategory); // Call the callback
                   }
                 },
                 child: Container(
                   alignment: Alignment.center,
-                  margin: EdgeInsets.only(
-                      left: kDefaultPadding,
-                      right:
-                          index == categories.length - 1 ? kDefaultPadding : 0),
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: kDefaultPadding),
-                  decoration: BoxDecoration(
-                      color: index == selectedIndex
-                          ? Colors.white.withOpacity(0.4)
-                          : Colors.transparent,
-                      borderRadius: BorderRadius.circular(6)),
+                  margin: EdgeInsets.only(left: kDefaultPadding, right: index == categories.length - 1 ? kDefaultPadding : 0),
+                  padding: const EdgeInsets.symmetric(horizontal: kDefaultPadding),
+                  decoration: BoxDecoration(color: index == selectedIndex ? Colors.white.withOpacity(0.4) : Colors.transparent, borderRadius: BorderRadius.circular(6)),
                   child: Text(
                     categories[index],
                     style: const TextStyle(

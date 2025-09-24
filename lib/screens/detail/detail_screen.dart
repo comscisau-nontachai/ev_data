@@ -4,16 +4,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class DetailScreen extends StatelessWidget {
-  const DetailScreen({Key? key, required this.car}) : super(key: key);
+  const DetailScreen({super.key, required this.car});
   final Car car;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // appBar: buildAppbar(context),
-      body: Body(
-        car: car,
-      ),
+      extendBodyBehindAppBar: true,
+      body: Body(car: car),
     );
   }
 
@@ -21,13 +19,13 @@ class DetailScreen extends StatelessWidget {
     return AppBar(
       backgroundColor: Colors.transparent,
       elevation: 0,
-      leading: IconButton(
-        icon: SvgPicture.asset(
-          "assets/icons/back.svg",
-          color: Colors.white,
-        ),
-        onPressed: () => Navigator.pop(context),
-      ),
+      // leading: IconButton(
+      //   icon: SvgPicture.asset(
+      //     "assets/icons/back.svg",
+      //     color: Colors.white,
+      //   ),
+      //   onPressed: () => Navigator.pop(context),
+      // ),
     );
   }
 }

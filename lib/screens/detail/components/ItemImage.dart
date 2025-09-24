@@ -6,9 +6,9 @@ import 'package:flutter_svg/flutter_svg.dart';
 
 class ItemImage extends StatelessWidget {
   const ItemImage({
-    Key? key,
+    super.key,
     required this.car,
-  }) : super(key: key);
+  });
 
   final Car car;
 
@@ -24,9 +24,7 @@ class ItemImage extends StatelessWidget {
               height: size.height * 0.38,
               child: CarouselSlider.builder(
                 itemCount: car.images.length,
-                itemBuilder:
-                    (BuildContext context, int itemIndex, int pageViewIndex) =>
-                        Container(
+                itemBuilder: (BuildContext context, int itemIndex, int pageViewIndex) => Container(
                   child: FadeInImage.assetNetwork(
                     placeholder: 'assets/images/loading.gif',
                     image: car.images[itemIndex],
@@ -44,22 +42,24 @@ class ItemImage extends StatelessWidget {
             top: size.height * 0.35 - 35,
             right: 0,
             child: Padding(
-              padding:
-                  const EdgeInsets.symmetric(horizontal: kDefaultPadding / 2),
+              padding: const EdgeInsets.symmetric(horizontal: kDefaultPadding / 2),
               child: Text(
                 car.name,
-                style: Theme.of(context).textTheme.headlineMedium?.copyWith(
-                    color: Colors.white, fontWeight: FontWeight.bold),
+                style: Theme.of(context).textTheme.headlineMedium?.copyWith(color: Colors.white, fontWeight: FontWeight.bold),
               ),
             ),
           ),
           SafeArea(
-            child: IconButton(
-              icon: SvgPicture.asset(
-                "assets/icons/back.svg",
-                color: Colors.white,
+            child: Container(
+              margin: const EdgeInsets.all(kDefaultPadding / 2),
+              decoration: BoxDecoration(color: Colors.black.withOpacity(0.3), shape: BoxShape.circle),
+              child: IconButton(
+                icon: SvgPicture.asset(
+                  "assets/icons/back.svg",
+                  colorFilter: const ColorFilter.mode(Colors.white, BlendMode.srcIn),
+                ),
+                onPressed: () => Navigator.pop(context),
               ),
-              onPressed: () => Navigator.pop(context),
             ),
           ),
         ],

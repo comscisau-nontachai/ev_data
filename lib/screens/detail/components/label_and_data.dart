@@ -3,10 +3,10 @@ import 'package:flutter/material.dart';
 
 class LabelAndData extends StatelessWidget {
   const LabelAndData({
-    Key? key,
+    super.key,
     required this.title,
     required this.body,
-  }) : super(key: key);
+  });
 
   final String title, body;
 
